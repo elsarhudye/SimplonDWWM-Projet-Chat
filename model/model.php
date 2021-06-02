@@ -64,7 +64,7 @@ function getDBConnection(): PDO
 		$dbh = new PDO($dsn, $user, $pass, $option);
 		// var_dump($dbh);
 		// echo "Connection établie !";	
-	return $dbh;
+		return $dbh;
 
 	}catch (PDOException $e) {
 		print "Erreur connexion !: " . $e->getMessage() . "<br/";
