@@ -21,15 +21,12 @@ function findAll(): array
 }?>
 
 <?php
-
-
-
-
 /**
  * Ajouter un message dans la base de données
  */
 function create(array $post): void
 {
+
 	//var_dump($post);
 	//die;
     $db = getDBConnection();
@@ -46,6 +43,7 @@ function create(array $post): void
  */
 function getDBConnection(): PDO
 {
+	
     // Coder ici
 	$user = "root";
 	$pass = "root";
